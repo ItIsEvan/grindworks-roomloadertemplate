@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3x0ewhohbwb4"]
+
+[ext_resource type="PackedScene" uid="uid://dfhgbjrdoxhau" path="res://objects/modules/mint/base_rooms/mint_goon_room.tscn" id="1_og5o6"]
+[ext_resource type="PackedScene" uid="uid://c1rus4vu8jrlg" path="res://objects/battle/battle_node/dynamic/battle_node_dynamic.tscn" id="2_dp26m"]
+
+[node name="Root Scene" instance=ExtResource("1_og5o6")]
+
+[node name="BattleNodeDynamic" parent="." index="7" node_paths=PackedStringArray("cogs") instance=ExtResource("2_dp26m")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.89967, 0, 0.314773)
+cog_range = Vector2i(1, 1)
+cogs = [NodePath("Cogs/Cog2")]
